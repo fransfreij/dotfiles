@@ -1,0 +1,4 @@
+echo @dir %* > %systemroot%\system32\ls.bat
+
+
+" run above script as admin in cmd
