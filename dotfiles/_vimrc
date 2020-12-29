@@ -1,0 +1,43 @@
+syntax on
+
+filetype plugin indent on
+
+set tabstop=2
+
+set shiftwidth=2
+
+set expandtab
+
+set ai
+
+set number
+
+set hlsearch
+
+set ruler
+
+colorscheme default
+
+highlight Comment ctermfg=green
+
+inoremap jk <ESC>
+xnoremap jk <ESC>
+ 
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+set nobackup       
+set nowritebackup 
+set noswapfile   
+
+set background=dark
+
+if has ('unix')
+   language messages C
+else 
+   language messages English_United States
+   set langmenu=en_US.UTF-8
+endif
+
+highlight Normal guifg=white guibg=black
