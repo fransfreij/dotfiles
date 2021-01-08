@@ -1,24 +1,14 @@
 syntax on
-
 filetype plugin indent on
-
 set tabstop=2
-
 set shiftwidth=2
-
 set expandtab
-
 set ai
-
 set number
-
 set hlsearch
-
 set ruler
 
 colorscheme default
-
-highlight Comment ctermfg=green
 
 inoremap jk <ESC>
 xnoremap jk <ESC>
@@ -40,4 +30,7 @@ else
    set langmenu=en_US.UTF-8
 endif
 
-highlight Normal guifg=white guibg=black
+highlight Normal ctermfg=white guibg=black
+highlight Constant ctermfg=red guibg=black
+highlight Type ctermfg=darkgreen guibg=black
+highlight Comment ctermfg=darkgrey guibg=black
