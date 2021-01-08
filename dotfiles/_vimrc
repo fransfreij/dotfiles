@@ -32,3 +32,5 @@ highlight Normal ctermfg=white guibg=black
 highlight Constant ctermfg=red guibg=black
 highlight Type ctermfg=darkgreen guibg=black
 highlight Comment ctermfg=darkgrey guibg=black
+hi cCustomFunc ctermfg=darkcyan guibg=black
+hi cCustomClass ctermfg=darkcyan guibg=black
