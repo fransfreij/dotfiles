@@ -12,6 +12,8 @@ colorscheme default
 
 inoremap jk <ESC>
 xnoremap jk <ESC>
+nnoremap <s-h> :bprevious<cr>
+nnoremap <s-l> :bnext<cr>
  
 set enc=utf-8
 set fenc=utf-8
