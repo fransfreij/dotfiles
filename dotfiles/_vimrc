@@ -1,3 +1,14 @@
+" Vim compiled with python
+
+" Plugin manager (change path below to match the current vim installation)
+call plug#begin('C:\Program Files (x86)\complete-x86\plugged')
+
+Plug 'ervandew/supertab'
+
+call plug#end()
+
+
+" User specific 
 syntax on
 filetype plugin indent on
 set tabstop=2
@@ -11,15 +22,16 @@ set ruler
 colorscheme default
 
 inoremap jk <ESC>
-xnoremap jk <ESC>
-nnoremap <s-h> :bprevious<cr>
+
+" jump between buffers
+nnoremap <s-h> :bprevious<cr> 
 nnoremap <s-l> :bnext<cr>
  
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 
-set nobackup nowritebackup noswapfile
+set nobackup nowritebackup noswapfile       
 
 set background=dark
 
@@ -30,9 +42,10 @@ else
    set langmenu=en_US.UTF-8
 endif
 
-highlight Normal ctermfg=white guibg=black
-highlight Constant ctermfg=red guibg=black
-highlight Type ctermfg=darkgreen guibg=black
-highlight Comment ctermfg=darkgrey guibg=black
+hi Normal ctermfg=white guibg=black
+hi Constant ctermfg=red guibg=black
+hi Type ctermfg=darkgreen guibg=black
+hi Comment ctermfg=darkgrey guibg=black
 hi cCustomFunc ctermfg=darkcyan guibg=black
 hi cCustomClass ctermfg=darkcyan guibg=black
+
