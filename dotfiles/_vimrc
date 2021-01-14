@@ -7,6 +7,8 @@ Plug 'ervandew/supertab'
 
 call plug#end()
 
+" remap leader key to space
+let mapleader = " "
 
 " User specific 
 syntax on
