@@ -7,8 +7,10 @@ Plug 'ervandew/supertab'
 
 call plug#end()
 
+
 " remap leader key to space
-let mapleader = " "
+let mapleader = " " 
+
 
 " User specific 
 syntax on
@@ -18,8 +20,11 @@ set shiftwidth=2
 set expandtab
 set ai
 set number
+set relativenumber
 set hlsearch
 set ruler
+set nowrap
+set colorcolumn=131
 
 colorscheme default
 
@@ -28,6 +33,9 @@ inoremap jk <ESC>
 " jump between buffers
 nnoremap <s-h> :bprevious<cr> 
 nnoremap <s-l> :bnext<cr>
+
+" quit current buffer
+nnoremap <s-q> :bd<cr>
  
 set enc=utf-8
 set fenc=utf-8
@@ -50,4 +58,7 @@ hi Type ctermfg=darkgreen guibg=black
 hi Comment ctermfg=darkgrey guibg=black
 hi cCustomFunc ctermfg=darkcyan guibg=black
 hi cCustomClass ctermfg=darkcyan guibg=black
+hi ColorColumn ctermbg=grey guibg=grey 
+
+
 
