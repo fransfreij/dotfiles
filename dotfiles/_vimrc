@@ -25,6 +25,7 @@ set hlsearch
 set ruler
 set nowrap
 set colorcolumn=131
+set hidden
 
 colorscheme default
 
