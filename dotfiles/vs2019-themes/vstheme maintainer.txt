@@ -1,3 +1,0 @@
-https://studiostyl.es/schemes/gruvbox-material-dark
-
-https://github.com/EugenyCh/Visual-Studio-Color-Themes
