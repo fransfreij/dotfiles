@@ -16,26 +16,23 @@ let g:coc_global_extensions=['coc-omnisharp', 'coc-tsserver', 'coc-json']
 
 " remap leader key to space
 let mapleader = " " 
-
-
-" leader remaps 
-
-nnoremap <leader>r :NERDTreeToggle<CR>
-nnoremap <leader>t :NERDTreeFocus<CR>
-
-" jump between buffers
-nnoremap <s-h> :bprevious<cr> 
-nnoremap <s-l> :bnext<cr>
-
 inoremap jk <ESC>
 
-" quit current buffer
+" leader remaps 
+nnoremap <leader>r :NERDTreeToggle<CR>
+nnoremap <leader>t :NERDTreeFocus<CR>
+nnoremap <s-h> :bprevious<cr> 
+nnoremap <s-l> :bnext<cr>
 nnoremap <s-q> :bd<cr>
-
 nnoremap <leader>w :w<CR>
-
-
-
+nnoremap <leader>y "+y
+nnoremap <leader>yy "+yy
+nnoremap <leader>p "+p
+nnoremap <leader>pp "+pp
+vnoremap <leader>y "+y
+vnoremap <leader>yy "+yy
+vnoremap <leader>p "+p
+vnoremap <leader>pp "+pp
 
 " User specific 
 syntax on
@@ -230,8 +227,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-
-
-
-
